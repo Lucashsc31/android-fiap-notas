@@ -1,17 +1,19 @@
 package br.com.fiap.notas;
 
 import android.content.Intent;
-import android.provider.ContactsContract;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 
+import br.com.fiap.notas.entity.Doc;
+import br.com.fiap.notas.util.ClickRecycleViewInterface;
 import br.com.fiap.notas.util.CloudantRequestInterface;
 import br.com.fiap.notas.util.CloudantResponseNota;
 import br.com.fiap.notas.util.DataAdapter;
@@ -22,7 +24,7 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class NotasCardActivity extends AppCompatActivity {
+public class NotasCardActivity extends AppCompatActivity implements ClickRecycleViewInterface {
 
     private RecyclerView recyclerView;
     private ArrayList<Row> rows;
@@ -97,5 +99,11 @@ public class NotasCardActivity extends AppCompatActivity {
         Intent intentChamaCadastraNota = new Intent(this, CadastraNotaActivity.class);
         intentChamaCadastraNota.putExtra("docId", rows.size());
         startActivity(intentChamaCadastraNota);
+    }
+
+    @Override
+    public void onRecyclerClick(Object object) {
+        Doc doc = (Doc)object;
+        Toast.makeText(this, doc.toString(), Toast.LENGTH_SHORT).show();
     }
 }
