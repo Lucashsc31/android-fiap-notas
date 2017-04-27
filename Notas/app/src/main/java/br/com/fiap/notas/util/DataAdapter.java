@@ -18,6 +18,8 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> {
 
     private ArrayList<Row> rows;
 
+    public static ClickRecycleViewInterface clickRecycleViewInterface;
+
     //Construtor que recebe um list de rows
     public DataAdapter(ArrayList<Row> _rows){
         this.rows = _rows;
@@ -57,6 +59,13 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> {
             tvTitulo = (TextView) itemView.findViewById(R.id.tvTitulo);
             tvAssunto = (TextView) itemView.findViewById(R.id.tvAssunto);
             tvConteudo = (TextView) itemView.findViewById(R.id.tvConteudo);
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    //ClickRecycleViewInterface
+                }
+            });
         }
     }
 }
