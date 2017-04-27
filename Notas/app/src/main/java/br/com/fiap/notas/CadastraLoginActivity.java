@@ -40,7 +40,6 @@ public class CadastraLoginActivity extends AppCompatActivity {
 
         arquivoDB = new ArquivoDB();
         mapDados = new HashMap<>();
-
     }
 
     //valida a entrada de dados e popula o HashMap

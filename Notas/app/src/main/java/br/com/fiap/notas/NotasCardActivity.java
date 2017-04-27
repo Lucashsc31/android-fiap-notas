@@ -42,6 +42,7 @@ public class NotasCardActivity extends AppCompatActivity {
         super.onPostResume();
     }
 
+
     private void iniciarViews() {
         //Cria uma referencia para a nossa RecyclerView no layout da Activity NotasCardyAcativity
         recyclerView = (RecyclerView) findViewById(R.id.card_recycler_notas);
