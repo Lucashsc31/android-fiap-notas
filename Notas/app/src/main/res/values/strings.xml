@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Fiap Notes</string>
+    <string name="app_name_cadastro">Fiap Notes - Dados da Conta</string>
+    <string name="nome">Nome</string>
+    <string name="logar">Acessar</string>
+    <string name="email"> Email</string>
+    <string name="senha"> Senha</string>
+    <string name="voltar">Fechar e Retornar</string>
+    <string name="valida_login">Preencha os dados de login corretamente!</string>
+    <string name="sobrenome">Sobrenome</string>
+    <string name="feminino">Feminino</string>
+    <string name="masculino">Masculino</string>
+    <string name="data_de_nascimento">Data de Nascimento</string>
+    <string name="gravar_dados">Gravar Dados</string>
+    <string name="excluir_dados">Excluir Dados</string>
+    <string name="carregar_dados">Carregar Dados</string>
+    <string name="verificar_dados">Verificar Dados</string>
+    <string name="gravar_arquivo">Gravar Arquivo</string>
+    <string name="ler_arquivo">Ler Arquivo</string>
+    <string name="excluir_arquivo">Excluir Arquivo</string>
+    <string name="fechar_e_retornar">Fechar e Retornar</string>
+    <string name="dados_conta_nok">Preencha os dados da conta coretamente.</string>
+    <string name="cadastro_ok">Cadastro efetuado com sucesso.</string>
+    <string name="exclusao_ok">Dados excluídos com êxito.</string>
+    <string name="dados_login_ok">Dados de login existentes.</string>
+    <string name="dados_login_nok">Dados de login inexistentes.</string>
+    <string name="gravar_arquivo_nok">Não foi ossível gravar o arquivo.</string>
+    <string name="gravar_arquivo_ok">Arquivo gravado com sucesso.</string>
+    <string name="ler_arquivo_nok">Não foi possível ler o aquivo.</string>
+    <string name="excluir_arq_nok">Não foi possível excluir o arquivo.</string>
+    <string name="excluir_arquivo_ok">Arquivo excluido com sucesso.</string>
+    <string name="usuario_senha_nok">usuário ou senha inválido.</string>
+    <string name="titulo">Titulo</string>
+    <string name="conteudo">Conteudo</string>
+    <string-array name="tipo_assunto">
+        <item>Selecione o assunto</item>
+        <item>Profisisonal</item>
+        <item>Pessoal</item>
+        <item>Financeiro</item>
+        <item>Geral</item>
+    </string-array>
+</resources>
+
